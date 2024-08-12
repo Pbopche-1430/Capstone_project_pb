@@ -1,1 +1,39 @@
-//todo: complete missing code.
+<!-- <div>
+    <h1>EVENT MANAGEMENT AND RESOURCE ALLOCATION PLATFORM</h1>
+</div>
+<div>
+    <h3>Please enter your user and password</h3>
+</div>
+
+<div>
+    <form [formGroup]="itemForm" (ngSubmit)="onSubmit()">
+
+        <div class="form-group"> 
+            <label for="username">Username:</label>
+            <input type="text" id="username" formControlName="username">
+            <div *ngIf="itemForm.get('username')?.hasError('required') 
+        && itemForm.get('username')?.touched " class="error">
+        </div>
+        Username is required
+        </div>
+
+        <div class="form-group"> 
+            <label for="password">Password:</label>
+            <input type="text" id="password" formControlName="password">
+            <div *ngIf="itemForm.get('password')?.hasError('required') 
+        && itemForm.get('password')?.touched " class="error">
+        </div>
+        Password is required
+        </div>
+
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+
+        <div>
+            <h3>Don't have an account? Registration</h3>>
+        </div>
+        
+    </form>
+</div>
+ -->

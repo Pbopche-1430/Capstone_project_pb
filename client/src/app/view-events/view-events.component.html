@@ -1,1 +1,80 @@
-//todo: complete missing code.
+<!-- <div class="container mt-5">
+  <h2>Manage Events</h2>
+
+  <div class="mt-4">
+      <h3>View & Update Events</h3>
+      <div class="form-inline mb-3">
+          <input type="text" formControlName="searchEvent" class="form-control mr-2" placeholder="Search with eventId">
+          <button class="btn btn-primary" (click)="searchEvent()">Search</button>
+      </div>
+  </div>
+
+  <div class="mt-4">
+      <h3>Event Information</h3>
+      <table class="table table-bordered">
+          <thead class="thead-light">
+              <tr>
+                  <th>Sr#</th>
+                  <th>Title</th>
+                  <th>Description</th>
+                  <th>Date Time</th>
+                  <th>Location</th>
+                  <th>Status</th>
+                  <th>Action</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr *ngFor="let event of eventObj | async">
+                  <td>{{event.eventId}}</td>
+                  <td>{{event.title}}</td>
+                  <td>{{event.description}}</td>
+                  <td>{{event.dateTime}}</td>
+                  <td>{{event.location}}</td>
+                  <td>{{event.status}}</td>
+                  <td>
+                      <button [routerLink]="['/booking-details/', event.eventId]" class="btn btn-info btn-sm">Update</button>
+                  </td>
+              </tr>
+          </tbody>
+      </table>
+  </div>
+
+  <div class="mt-4">
+      <form [formGroup]="itemForm" (ngSubmit)="onSubmit()">
+          <div class="form-group">
+              <label for="title">Title:</label>
+              <input type="text" id="title" formControlName="title" class="form-control"/>
+          </div>
+
+          <div class="form-group">
+              <label for="description">Description:</label>
+              <input type="text" id="description" formControlName="description" class="form-control"/>
+          </div>
+
+          <div class="form-group">
+              <label for="dateTime">Date Time:</label>
+              <input type="datetime-local" id="dateTime" formControlName="dateTime" class="form-control"/>
+          </div>
+
+          <div class="form-group">
+              <label for="location">Location:</label>
+              <input type="text" id="location" formControlName="location" class="form-control"/>
+          </div>
+
+          <div class="form-group">
+              <label for="status">Status:</label>
+              <input type="text" id="status" formControlName="status" class="form-control"/>
+          </div>
+
+          <button type="submit" class="btn btn-success">Submit</button>
+      </form>
+  </div>
+
+  <div *ngIf="showMessage" class="alert alert-success mt-3">
+      <h3>{{ responseMessage }}</h3>
+  </div>
+
+  <div *ngIf="showError" class="alert alert-danger mt-3">
+      <h3>{{ errorMessage }}</h3>
+  </div>
+</div> -->
